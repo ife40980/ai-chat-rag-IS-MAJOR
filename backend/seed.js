@@ -12,7 +12,7 @@ const pool = new pg.Pool({
     port: 5432,
     database: "ai_chat_rag",
     user: "postgres",
-    password: "Ife40980",
+    password: process.env.DB_PASSWORD,
 });
 
 function chunkText(text) {
